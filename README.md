@@ -8,3 +8,9 @@ It's a stand-alone company which develops products related to AI services..
 # 📬 Get in touch
 - [Twitter](https://www.twitter.com/MoonlightFanta1)
 - [Instagram](https://www.instagram.com/moonlightfantaisa)
+
+
+![Author](https://img.shields.io/badge/author-littinrajan-blue)
+![Issues](https://img.shields.io/github/issues/moonlightfantasia/moonlightfantasia)
+![Stars](https://img.shields.io/github/stars/moonlightfantasia/moonlightfantasia)
+![License](https://img.shields.io/github/license/moonlightfantasia/moonlightfantasia
