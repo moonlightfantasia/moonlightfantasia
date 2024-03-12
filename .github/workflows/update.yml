@@ -1,0 +1,30 @@
+name: Updater
+
+on:
+  schedule:
+    - cron: '* * * * *'  # Runs every day at midnight
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+      
+    - name: Set up Git
+      run: |
+        git config --global user.email "littinrajan@gmail.com"
+        git config --global user.name "GitHub Actions"
+      
+    - name: Make Changes
+      run: |
+        echo "Automated commit" >> README.md
+      
+    - name: Commit Changes
+      run: |
+        git add .
+        git commit -m "Automated commit: $(date +'%Y-%m-%d %T')"
+      
+    - name: Push Changes
+      run: git push origin HEAD:main
