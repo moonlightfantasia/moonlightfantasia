@@ -2,7 +2,7 @@ name: Updater
 
 on:
   schedule:
-    - cron: '* * * * *'  # Runs every day at midnight
+    - cron: '0 * * * *'
 
 jobs:
   commit:
@@ -19,12 +19,12 @@ jobs:
       
     - name: Make Changes
       run: |
-        echo "Automated commit" >> README.md
+        echo " " >> README.md
       
     - name: Commit Changes
       run: |
         git add .
-        git commit -m "Automated commit: $(date +'%Y-%m-%d %T')"
+        git commit -m "updating readme"
       
     - name: Push Changes
       run: git push origin HEAD:main
